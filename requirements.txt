@@ -1,0 +1,6 @@
+tqdm==4.23.4
+numpy==1.16.4
+torch==1.1.0
+~pencv_contrib_python==4.1.0.25
+matplotlib==2.2.2
+Keras==2.2.4

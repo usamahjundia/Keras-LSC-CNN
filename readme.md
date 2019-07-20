@@ -32,7 +32,7 @@ Or
 python3 convert_lsccnn_to_keras.py --pthpath /path/to/pth/file --savedir /where/to/save/model
 ```
 
-2. Doing inference with the model
+### 2. Doing inference with the model
 
 network.py contains the functions you will need for inference. Function *pred_for_one_image* can be used to do prediction.
 ```py

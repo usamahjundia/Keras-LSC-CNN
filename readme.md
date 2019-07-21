@@ -45,6 +45,8 @@ loc, h, w = pred_for_one_image(model,image)
 # h and w is the respective box height and widths for every locations
 ```
 
+Thanks to Skand for the help during the process of porting the model to Keras.
+
 TODO :
 - Implement NMS as a keras function if possible
 - vectorize a lot of operations on NMS 

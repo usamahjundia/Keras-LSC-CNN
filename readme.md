@@ -2,6 +2,8 @@
 
 This repository contains an unofficial Keras Implementation of LSC-CNN, a crowd counting model as proposed in the paper [Locate, Size and Count: Accurately Resolving People in Dense Crowds via Detection.](https://arxiv.org/abs/1906.07538) Currently, the implementation only supports parsing weights from the pytroch pretrained model for inference purposes.
 
+Thanks to Skand for the help during the process of porting the model to Keras.
+
 Some functions were taken from the [official pytorch implementation repository](https://github.com/val-iisc/lsc-cnn) for performing NMS.
 
 Provided in this repository are:
@@ -44,8 +46,6 @@ loc, h, w = pred_for_one_image(model,image)
 # loc is a binary array, True if a certain pixel is decided as a center for a detected head
 # h and w is the respective box height and widths for every locations
 ```
-
-Thanks to Skand for the help during the process of porting the model to Keras.
 
 TODO :
 - Implement NMS as a keras function if possible

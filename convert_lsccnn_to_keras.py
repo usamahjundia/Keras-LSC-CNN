@@ -10,7 +10,7 @@ parser.add_argument('--pthpath',dest='pthpath',required=True,help="The path lead
 parser.add_argument('--savedir',dest='savedir',required=True,help="Where to save the model")
 
 def convert_torch_model_to_keras(pthpath):
-    weights_dict = torch.load(pthpath)['state_dict']
+    weights_dict = torch.load(pthpath)
     kmodel = build_LSCCNN_model()
     for layer in tqdm(kmodel.layers):
         layername = layer.name
